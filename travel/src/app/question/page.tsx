@@ -30,7 +30,6 @@ export default function QuestionPage() {
 	    <QuestionCard
 	      question={q.question}
 	      options={q.options}
-	      image={q.image}
 	      current={current + 1}
 	      total={questions.length}
 	      onSelect={handleAnswer}

@@ -27,15 +27,15 @@ export default function ResultPage() {
   const destinations = dominantTag ? tagToDestinations[dominantTag] : [];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-      <h1 className="text-3xl font-bold mb-4">あなたにおすすめの旅先</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-8">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4">あなたにおすすめの旅先</h1>
 
       {dominantTag ? (
         <>
-          <p className="mb-6 text-lg">{dominantTag} タイプにぴったりの旅行先は…</p>
+          <p className="mb-6 text-base sm:text-lg">{dominantTag} タイプにぴったりの旅行先は…</p>
           <ul className="space-y-3 mb-8">
             {destinations.map((place) => (
-              <li key={place} className="text-2xl font-semibold">
+              <li key={place} className="text-xl sm:text-2xl font-semibold">
                 🌟 {place}
               </li>
             ))}
@@ -45,7 +45,7 @@ export default function ResultPage() {
               reset();
               router.push('/question');
             }}
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
+            className="bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-green-700 transition text-sm sm:text-base"
           >
             もう一度診断する
           </button>

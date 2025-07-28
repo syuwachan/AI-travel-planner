@@ -2,7 +2,10 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f4c2b;
+  --primary-green: #22c55e;
+  --dark-green: #16a34a;
+  --light-green: #86efac;
 }
 
 @theme inline {
@@ -14,8 +17,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a1f0f;
+    --foreground: #d1fae5;
+    --primary-green: #34d399;
+    --dark-green: #10b981;
+    --light-green: #6ee7b7;
   }
 }
 
@@ -23,4 +29,40 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* レスポンシブ対応の基本設定 */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* モバイルファースト設計 */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  
+  /* ボタンのタッチターゲットを大きく */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* タブレット対応 */
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* デスクトップ対応 */
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
 }
