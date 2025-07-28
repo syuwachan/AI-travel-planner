@@ -109,3 +109,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is private and proprietary.
+
+## Deployment
+
+This project is configured for deployment on Cloudflare Pages.
