@@ -1,4 +1,4 @@
-//質問表示コンポーネント
+// Question display component
 'use client'
 
        type QuestionCardProps = {

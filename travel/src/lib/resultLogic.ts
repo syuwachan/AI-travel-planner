@@ -1,1 +1,1 @@
-//回答タグを集計して結果判定
+// Aggregate answer tags and determine results
