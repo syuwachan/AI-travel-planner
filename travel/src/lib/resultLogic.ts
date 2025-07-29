@@ -1,1 +1,0 @@
-// Aggregate answer tags and determine results

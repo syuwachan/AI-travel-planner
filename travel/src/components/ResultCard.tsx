@@ -12,11 +12,12 @@ export default function ResultCard({
 }: ResultCardProps) {
 	return (
 		<div className="bg-white rounded-lg shadow-md overflow-hidden">
-			<img 
-				src={images} 
+			<img
+				src={images}
 				alt={title}
 				className="w-full h-48 object-cover"
 			/>
+			{/* Ensure the image path is correct and accessible */}
 			<div className="p-4">
 				<h3 className="text-xl font-semibold mb-2">{title}</h3>
 				<p className="text-gray-600">{description}</p>

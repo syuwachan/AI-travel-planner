@@ -1,3 +1,4 @@
+//目的地の型定義
 export const tagToDestinations: Record<string, string[]> = {
 	relax: ['Hakone', 'Yufuin', 'Ibusuki'],
 	active: ['Hakuba', 'Yakushima', 'Izu Oshima'],

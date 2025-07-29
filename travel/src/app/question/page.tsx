@@ -6,12 +6,12 @@ import { useRouter } from 'next/navigation';
 import { useAnswerStore } from '@/store/useAnswerStore';
 
 export default function QuestionPage() {
+	//現在の問題
 	const [current, setCurrent] = useState(0);
 	const router = useRouter();
 	const { tags, setTags } = useAnswerStore();
         
-	const handleAnswer = (tag: string) => {
-	  // タグを追加
+	const handleAnswer = (tag: string) => {	
 	  const newTags = [...tags, tag];
 	  setTags(newTags);
         
